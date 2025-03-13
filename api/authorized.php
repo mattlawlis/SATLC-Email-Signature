@@ -1,5 +1,15 @@
 <?php
 
+// Add session verification at the top
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (empty($_SESSION['authenticated'])) {
+    header('Location: /api/index.php');
+    exit();
+}
+
 error_log('Session variables: ' . print_r($_SESSION, true));
 
 require_once __DIR__ . '/includes/header.php';
