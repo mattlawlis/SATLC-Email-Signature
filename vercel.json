@@ -9,6 +9,7 @@
     { "src": "/js/(.*)", "dest": "/public/js/$1" },
     { "src": "/images/(.*)", "dest": "/public/images/$1" },
     { "src": "/fonts/(.*)", "dest": "/public/fonts/$1" },
+    { "src": "/authorized", "dest": "/api/authorized.php" },
     { "src": "/(.*)", "dest": "/api/$1" }
   ]
 }
