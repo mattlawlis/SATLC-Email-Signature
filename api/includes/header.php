@@ -13,10 +13,10 @@ header('Location: api/index.php');
   <title>The St. Anthony Email Signature Generator</title>
   
   <!-- Favicon -->
-  <link rel="icon" href="public/images/SATLC-favicon.png" type="image/png">
+  <link rel="icon" href="/public/images/SATLC-favicon.png" type="image/png">
   
   <!-- Open Graph -->
-  <meta property="og:image" content="public/images/SATLC-email-sig-generator-opengraph.png">
+  <meta property="og:image" content="/public/images/SATLC-email-sig-generator-opengraph.png">
   
   <!-- Bulma CSS and other external CSS if needed -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
@@ -25,12 +25,12 @@ header('Location: api/index.php');
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="/public/css/styles.css">
 </head>
 <body>
   <!-- Header Section with St Anthony Hotel Logo -->
   <header class="header">
-    <img src="public/images/SATLC-Logo.png" alt="St Anthony Hotel Logo" width="125" style="display:block; margin:0 auto 10px;">
+    <img src="/public/images/SATLC-Logo.png" alt="St Anthony Hotel Logo" width="125" style="display:block; margin:0 auto 10px;">
     <br>
     <h1>Employee Signature Generator</h1>
     <!-- Mobile Warning Message -->
