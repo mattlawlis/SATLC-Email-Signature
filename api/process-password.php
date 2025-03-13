@@ -23,15 +23,15 @@ if (isset($_POST['password'])) {
         $_SESSION['authenticated'] = true;
 
         // Redirect to authorized.php - use absolute path
-        header('Location: /authorized');
+        header('Location: /api/authorized.php');
         exit();
     } else {
         // Password is incorrect, redirect back to index.php with error flag
-        header('Location: /index.php?error=1');
+        header('Location: /api/index.php?error=1');
         exit();
     }
 } else {
     // No password entered, redirect back to index.php
-    header('Location: /index.php');
+    header('Location: /api/index.php');
     exit();
 }
