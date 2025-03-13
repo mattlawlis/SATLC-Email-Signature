@@ -1,0 +1,199 @@
+/* css/styles.css */
+
+/* Custom Fonts */
+@font-face {
+  font-family: 'ActaHeadline-Bold';
+  src: url('../fonts/ActaHeadline-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SofiaProBold';
+  src: url('../fonts/SofiaProBold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SofiaProLight';
+  src: url('../fonts/SofiaProLight.otf') format('opentype');
+}
+
+/* Global Styles */
+body, p, label, button, input, select, textarea {
+  font-family: 'SofiaProLight', Arial, sans-serif;
+  color: #404040;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important; /* remove underline */
+  color: #404040;
+}
+
+/* Header, Section Headings, etc. */
+.header {
+  background-color: #FFF;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.header h1 {
+  margin: 0;
+  color: #404040;
+  font-family: 'ActaHeadline-Bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 36px;
+}
+
+#mobile-warning {
+  display: none;
+  font-family: 'SofiaProBold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+#mobile-warning i {
+  color: red;
+  margin-right: 5px;
+}
+
+/* Section Headings ("Your Information" and "Live Preview") */
+.acta-headline {
+  font-family: 'ActaHeadline-Bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #404040;
+}
+
+/* Form Field Labels */
+.label {
+  font-family: 'SofiaProBold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #404040;
+}
+
+/* Signature Preview Container */
+#signature_container {
+  background-color: #ffffff !important;
+  padding: 20px;
+  border: 1px solid #ddd;
+  font-size: 11pt;
+  color: #404040;
+}
+
+/* Signature Styles */
+.signature {
+  max-width: 600px;
+  padding: 10px;
+  font-family: "Arial", sans-serif !important; /* Force Arial except for name/awards/footer */
+  line-height: normal !important;
+}
+
+/* Name in Times New Roman */
+.signature .name {
+  font-family: "Times New Roman", serif !important;
+  font-size: 14.5pt;
+  letter-spacing: 0.5pt;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+/* Title in Arial */
+.signature .title {
+  font-size: 9pt;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* Divider row */
+.signature .divider {
+  margin: 10px 0;
+}
+
+/* Address & phone lines with reduced spacing for Outlook */
+.signature .address,
+.signature .phone {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 9pt;
+}
+
+/* Website line with minimal vertical spacing */
+.signature .website {
+  font-size: 9pt;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Logo with minimal margin top/bottom */
+.signature .logo {
+  margin: 5px 0;
+}
+
+/* Awards in Times New Roman */
+.signature .awards {
+  font-family: "Times New Roman", serif !important;
+  font-size: 7.5pt;
+  margin: 5px 0;
+  line-height: 1.2;
+}
+
+/* Footer in Times New Roman */
+.signature .footer {
+  font-family: "Times New Roman", serif !important;
+  font-size: 7.5pt;
+  margin: 5px 0 0 0;
+  line-height: 1.2;
+}
+
+/* Copy Button */
+#copyBtn {
+  margin-top: 20px;
+  background-color: #1c1c1c !important;
+  border-color: #1c1c1c !important;
+  border-radius: 9999px;
+  font-family: 'SofiaProBold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#copyBtn .icon {
+  display: none;
+}
+
+/* Instruction Card */
+.instruction-card {
+  margin-bottom: 10px;
+}
+.instruction-card .card-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.instruction-card .card-content ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.instruction-card .card-content ul li::before {
+  content: "\\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #404040;
+}
+
+/* Responsive: On mobile/tablet, hide all content except the header */
+@media (max-width: 768px) {
+  body > :not(.header) {
+    display: none;
+  }
+  #mobile-warning {
+    display: block;
+  }
+}
