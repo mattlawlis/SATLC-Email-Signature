@@ -6,7 +6,8 @@ if (empty($_SESSION['authenticated'])) {
     exit();
 }
 
-require_once 'api/includes/header.php';
+require_once __DIR__ . '/includes/header.php';
+require_once __DIR__ . '/includes/footer.php';
 ?>
 
 <!-- Instruction Section -->
