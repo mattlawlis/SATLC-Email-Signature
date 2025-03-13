@@ -2,7 +2,7 @@
 session_start();
 // Optionally check if user is authenticated:
 if (empty($_SESSION['authenticated'])) {
-    header('Location: api/index.php');
+    header('Location: /api/index.php');
     exit();
 }
 
@@ -124,7 +124,7 @@ require_once __DIR__ . '/includes/footer.php';
                 
               <!-- Static TLC Sign Off Logo -->
               <p class="logo">
-                <img src="images/luxury-collection-sign-off.png" width="200" alt="Luxury Collection">
+                <img src="/public/images/luxury-collection-sign-off.png" width="200" alt="Luxury Collection">
               </p>
                 
               <!-- Your Hotel's Awards -->
