@@ -1,17 +1,17 @@
-/* css/styles.css */
+/* public/css/styles.css */
 
 /* Custom Fonts */
 @font-face {
   font-family: 'ActaHeadline-Bold';
-  src: url('../fonts/ActaHeadline-Bold.otf') format('opentype');
+  src: url('/fonts/ActaHeadline-Bold.otf') format('opentype');
 }
 @font-face {
   font-family: 'SofiaProBold';
-  src: url('../fonts/SofiaProBold.otf') format('opentype');
+  src: url('/fonts/SofiaProBold.otf') format('opentype');
 }
 @font-face {
   font-family: 'SofiaProLight';
-  src: url('../fonts/SofiaProLight.otf') format('opentype');
+  src: url('/fonts/SofiaProLight.otf') format('opentype');
 }
 
 /* Global Styles */
