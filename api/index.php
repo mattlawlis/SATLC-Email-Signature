@@ -16,10 +16,10 @@ session_start();
   <title>The St. Anthony Email Signature Generator</title>
   
   <!-- Favicon -->
-  <link rel="icon" href="images/SATLC-favicon.png" type="image/png">
+  <link rel="icon" href="/public/images/SATLC-favicon.png" type="image/png">
   
   <!-- Open Graph -->
-  <meta property="og:image" content="images/SATLC-email-sig-generator-opengraph.png">
+  <meta property="og:image" content="/public/images/SATLC-email-sig-generator-opengraph.png">
   
   <!-- Bulma CSS for Layout & Form Styling -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
@@ -31,21 +31,21 @@ session_start();
     /* Import Custom Fonts */
     @font-face {
       font-family: 'ActaHeadline-Bold';
-      src: url('fonts/ActaHeadline-Bold.otf') format('opentype');
+      src: url('/public/fonts/ActaHeadline-Bold.otf') format('opentype');
     }
     @font-face {
       font-family: 'SofiaProBold';
-      src: url('fonts/SofiaProBold.otf') format('opentype');
+      src: url('/public/fonts/SofiaProBold.otf') format('opentype');
     }
     @font-face {
       font-family: 'SofiaProLight';
-      src: url('fonts/SofiaProLight.otf') format('opentype');
+      src: url('/public/fonts/SofiaProLight.otf') format('opentype');
     }
 
     body {
       margin: 0;
       padding: 0;
-      background: url('images/st-anthony-bg.webp') no-repeat center center fixed;
+      background: url('/public/images/st-anthony-bg.webp') no-repeat center center fixed;
       background-size: cover;
       color: white;
       font-family: 'SofiaProLight', sans-serif;
@@ -122,9 +122,9 @@ session_start();
 <body>
   <div class="container">
     <!-- Logo Image -->
-    <img id="logo" src="images/SATLC-Logo-white.png" alt="SATLC Logo">
+    <img id="logo" src="/public/images/SATLC-Logo-white.png" alt="SATLC Logo">
     <!-- Password Field and Enter Button inside a Form -->
-    <form action="process-password.php" method="post">
+    <form action="/api/process-password.php" method="post">
       <div class="password-container">
         <input type="password" name="password" placeholder="PASSWORD" required>
         <button type="submit">ENTER</button>
