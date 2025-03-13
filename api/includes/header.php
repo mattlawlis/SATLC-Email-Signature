@@ -22,7 +22,7 @@ if (empty($_SESSION['authenticated'])) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The St. Anthony Email Signature Generator</title>
+  <title>The Luxury Collection Email Signature Generator</title>
   
   <!-- Favicon -->
   <link rel="icon" href="/images/SATLC-favicon.png" type="image/png">
@@ -40,9 +40,9 @@ if (empty($_SESSION['authenticated'])) {
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <!-- Header Section with St Anthony Hotel Logo -->
+  <!-- Header Section with TLC Logo -->
   <header class="header">
-    <img src="/images/SATLC-Logo.png" alt="St Anthony Hotel Logo" width="125" style="display:block; margin:0 auto 10px;">
+    <img src="/images/TLC-Logo-Grey.png" alt="TLC Logo" width="125" style="display:block; margin:0 auto 10px;">
     <br>
     <h1>Employee Signature Generator</h1>
     <!-- Mobile Warning Message -->
