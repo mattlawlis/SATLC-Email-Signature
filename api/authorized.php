@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 // Optionally check if user is authenticated:
 if (empty($_SESSION['authenticated'])) {
     header('Location: /api/index.php');
