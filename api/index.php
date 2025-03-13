@@ -16,10 +16,10 @@ session_start();
   <title>The St. Anthony Email Signature Generator</title>
   
   <!-- Favicon -->
-  <link rel="icon" href="/public/images/SATLC-favicon.png" type="image/png">
+  <link rel="icon" href="/images/SATLC-favicon.png" type="image/png">
   
   <!-- Open Graph -->
-  <meta property="og:image" content="/public/images/SATLC-email-sig-generator-opengraph.png">
+  <meta property="og:image" content="/images/SATLC-email-sig-generator-opengraph.png">
   
   <!-- Bulma CSS for Layout & Form Styling -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
@@ -73,7 +73,7 @@ session_start();
       outline: none;
       border-radius: 5px 0 0 5px;
       font-family: 'SofiaProLight', sans-serif;
-      background-color: #D9D9D6; /* corrected double ## */
+      background-color: #D9D9D6; 
       color: #1c1c1c;
     }
     .password-container button {
