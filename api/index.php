@@ -14,7 +14,7 @@ session_start();
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The St. Anthony Email Signature Generator</title>
+  <title>The Luxury Collection Email Signature Generator</title>
   
   <!-- Favicon -->
   <link rel="icon" href="/images/SATLC-favicon.png" type="image/png">
@@ -123,7 +123,7 @@ session_start();
 <body>
   <div class="container">
     <!-- Logo Image -->
-    <img id="logo" src="/images/SATLC-Logo-white.png" alt="SATLC Logo">
+    <img id="logo" src="/images/TLC-Logo-white.png" alt="TLC Logo">
     <!-- Password Field and Enter Button inside a Form -->
     <form action="/api/process-password.php" method="post">
       <div class="password-container">
