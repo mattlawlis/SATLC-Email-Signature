@@ -87,46 +87,57 @@ require_once __DIR__ . '/includes/footer.php';
       <!-- RIGHT COLUMN: Live Preview -->
       <div class="column is-two-thirds">
         <h3 class="title is-4 acta-headline">Live Preview</h3>
-        <!-- START PREVIEW -->
+        
+          <!-- START PREVIEW -->
         <article class="message is-dark">
           <div class="message-body" id="signature_container">
             <div class="signature">
+                
               <!-- Dynamic Name -->
               <p class="name" id="preview_name">FIRST NAME<br>LAST NAME</p>
+                
               <!-- Dynamic Title -->
               <p class="title" id="preview_title">TITLE</p>
-              <!-- Fixed Width Line Under Title -->
+                
+              <!-- Fixed Width Divider Line Under Title -->
               <div class="title-line"></div>
-              <!-- Static Address -->
+                
+              <!-- Static Address / Adjust to the Address of Your Hotel -->
               <p class="address">
                 THE ST. ANTHONY, A LUXURY COLLECTION HOTEL<br>
                 300 E TRAVIS ST, SAN ANTONIO, TX 78205 UNITED STATES
               </p>
+                
               <!-- Static Phone Numbers with Dynamic Mobile -->
               <p class="phone">
-                T &nbsp;210.227.4392 &nbsp;&nbsp;|&nbsp;&nbsp;
-                M &nbsp;<span id="preview_mobile">000.000.0000</span> &nbsp;&nbsp;|&nbsp;&nbsp;
-                F &nbsp;210.227.0915
+                T &nbsp;210.227.4392 &nbsp;&nbsp;|&nbsp;&nbsp; <!-- Change To Your Hotel's Main Line -->
+                M &nbsp;<span id="preview_mobile">000.000.0000</span> &nbsp;&nbsp;|&nbsp;&nbsp; <!-- Do Not Edit -->
+                F &nbsp;210.227.0915 <!-- Change To Your Hotel's Fax Number -->
               </p>
+                
               <!-- Website spaced evenly between phone & logo -->
               <p class="website">
                 <strong>
-                  <a href="http://www.thestanthonyhotel.com/" target="_blank">www.thestanthonyhotel.com</a>
+                  <a href="http://www.thestanthonyhotel.com/" target="_blank">www.thestanthonyhotel.com</a> <!-- Change To Your Hotel's Website URL -->
                 </strong>
               </p>
-              <!-- Static Logo -->
+                
+              <!-- Static TLC Sign Off Logo -->
               <p class="logo">
                 <img src="images/luxury-collection-sign-off.png" width="200" alt="Luxury Collection">
               </p>
-              <!-- Static Awards (Times New Roman) -->
+                
+              <!-- Your Hotel's Awards -->
               <p class="awards">
                 Four Diamond Award / <i>AAA</i>
               </p>
-              <!-- Signature Footer Text (Times New Roman) -->
+                
+              <!-- Signature Footer Text -->
               <!--<p class="footer">
                 Operated by Crescent Hotels and Resorts under license from
                 Marriott International, Inc. or one of its affiliates.
               </p>-->
+                
             </div>
           </div>
         </article>
@@ -144,5 +155,5 @@ require_once __DIR__ . '/includes/footer.php';
 </section>
 
 <?php
-require_once 'api/includes/footer.php';
+require_once '/api/includes/footer.php';
 ?>
