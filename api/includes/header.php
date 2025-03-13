@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (empty($_SESSION['authenticated'])) {
-header('Location: api/index.php');
+header('Location: /api/index.php');
  exit();
  }
 ?>
