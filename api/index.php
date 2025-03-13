@@ -123,7 +123,7 @@ session_start();
 <body>
   <div class="container">
     <!-- Logo Image -->
-    <img id="logo" src="/images/TLC-Logo-white.png" alt="TLC Logo">
+    <img id="logo" src="/images/TLC-Logo-White.png" alt="TLC Logo">
     <!-- Password Field and Enter Button inside a Form -->
     <form action="/api/process-password.php" method="post">
       <div class="password-container">
