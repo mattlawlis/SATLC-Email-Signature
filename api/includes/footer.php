@@ -1,4 +1,4 @@
 <!-- JavaScript Files -->
-<script src="/public/js/scripts.js"></script>
+<script src="/js/scripts.js"></script>
 </body>
 </html>
