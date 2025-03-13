@@ -36,7 +36,7 @@ if (empty($_SESSION['authenticated'])) {
   <!-- Font Awesome (only used in input fields and mobile warning icon) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Custom CSS -->
+  <!-- Custom CSS - Fix path to be consistent -->
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
