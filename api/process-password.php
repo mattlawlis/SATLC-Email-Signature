@@ -1,5 +1,16 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    $domain = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
+    session_set_cookie_params([
+        'lifetime' => 0,
+        'path' => '/',
+        'domain' => $domain,
+        'secure' => true,
+        'httponly' => true,
+        'samesite' => 'Strict',
+    ]);
+    session_start();
+}
 
 // Define the correct password
 $correct_password = 'crescent300'; // Replace with the actual password
@@ -12,15 +23,15 @@ if (isset($_POST['password'])) {
         $_SESSION['authenticated'] = true;
 
         // Redirect to authorized.php
-        header('Location: /authorized');
+        header('Location: /api/authorized.php');
         exit();
     } else {
         // Password is incorrect, redirect back to index.php with error flag
-        header('Location: /index.php?error=1');
+        header('Location: /api/index.php?error=1');
         exit();
     }
 } else {
     // No password entered, redirect back to index.php
-    header('Location: /index.php');
+    header('Location: /api/index.php');
     exit();
 }
