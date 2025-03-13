@@ -29,18 +29,18 @@ session_start();
   <!-- Inline CSS for index.php -->
   <style>
     /* Import Custom Fonts */
-    @font-face {
-      font-family: 'ActaHeadline-Bold';
-      src: url('/public/fonts/ActaHeadline-Bold.otf') format('opentype');
-    }
-    @font-face {
-      font-family: 'SofiaProBold';
-      src: url('/public/fonts/SofiaProBold.otf') format('opentype');
-    }
-    @font-face {
-      font-family: 'SofiaProLight';
-      src: url('/public/fonts/SofiaProLight.otf') format('opentype');
-    }
+        @font-face {
+          font-family: 'ActaHeadline-Bold';
+          src: url('/fonts/ActaHeadline-Bold.otf') format('opentype');
+        }
+        @font-face {
+          font-family: 'SofiaProBold';
+          src: url('/fonts/SofiaProBold.otf') format('opentype');
+        }
+        @font-face {
+          font-family: 'SofiaProLight';
+          src: url('/fonts/SofiaProLight.otf') format('opentype');
+        }
 
     body {
       margin: 0;
