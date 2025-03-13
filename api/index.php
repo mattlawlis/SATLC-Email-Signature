@@ -1,8 +1,9 @@
 <?php
+$domain = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
 session_set_cookie_params([
     'lifetime' => 0,
     'path' => '/',
-    'domain' => 'satlc-email-signature.vercel.app', //Replace with actual URL
+    'domain' => $domain,
     'secure' => true,
     'httponly' => true,
     'samesite' => 'Strict',
