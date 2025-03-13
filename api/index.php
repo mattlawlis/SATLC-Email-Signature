@@ -45,7 +45,7 @@ session_start();
     body {
       margin: 0;
       padding: 0;
-      background: url('/public/images/st-anthony-bg.webp') no-repeat center center fixed;
+      background: url('/images/st-anthony-bg.webp') no-repeat center center fixed;
       background-size: cover;
       color: white;
       font-family: 'SofiaProLight', sans-serif;
@@ -122,7 +122,7 @@ session_start();
 <body>
   <div class="container">
     <!-- Logo Image -->
-    <img id="logo" src="/public/images/SATLC-Logo-white.png" alt="SATLC Logo">
+    <img id="logo" src="/images/SATLC-Logo-white.png" alt="SATLC Logo">
     <!-- Password Field and Enter Button inside a Form -->
     <form action="/api/process-password.php" method="post">
       <div class="password-container">
