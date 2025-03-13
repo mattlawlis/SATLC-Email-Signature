@@ -1,20 +1,8 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
 
-// Debug session variables
 error_log('Session variables: ' . print_r($_SESSION, true));
 
-// Optionally check if user is authenticated:
-if (empty($_SESSION['authenticated'])) {
-    error_log('Not authenticated, redirecting to index');
-    header('Location: /api/index.php');
-    exit();
-}
-
 require_once __DIR__ . '/includes/header.php';
-require_once __DIR__ . '/includes/footer.php';
 ?>
 
 <!-- Instruction Section -->
