@@ -32,12 +32,12 @@ if (isset($_POST['password'])) {
         error_log('Failed login attempt from IP: ' . $_SERVER['REMOTE_ADDR']);
         
         // Password is incorrect, redirect back to index.php with error flag
-        header('Location: /api/index.php?error=1');
+        header('Location: /?error=1');
         exit();
     }
 } else {
     // No password entered, redirect back to index.php
-    header('Location: /index.php');
+    header('Location: /');
     exit();
 }
 
