@@ -25,7 +25,7 @@ if (isset($_POST['password'])) {
         // Add debug logging
         error_log('Authentication successful for session: ' . session_id());
         
-        header('Location: /api/authorized.php');
+        header('Location: /authorized');
         exit();
     } else {
         // Add failed attempt logging
@@ -40,3 +40,4 @@ if (isset($_POST['password'])) {
     header('Location: /index.php');
     exit();
 }
+
