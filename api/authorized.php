@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 if (empty($_SESSION['authenticated'])) {
-    header('Location: /api/index.php');
+    header('Location: /');
     exit();
 }
 
